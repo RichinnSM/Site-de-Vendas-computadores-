@@ -75,6 +75,47 @@ body{
     font-family: Poppins;
 }
 
+/*HERO2*/
+/**
+.ul-pai{
+    border: 1px solid #fff;
+    list-style-image: url(../img/Menu.png);
+    margin: 0;
+}
+
+.hero-2 ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.hero-2 ul li{
+    position: relative;
+}
+
+.hero-2 ul li ul{
+    position: absolute;
+    left: 6em;
+    top: 0;
+    display: none;
+}
+
+.hero-2 ul li ul li a{
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    background-color: #282828;
+    padding: 5px;
+    border: 1px solid #aa00bb;
+}
+
+.hero-2 li:hover ul{
+    display: block;
+}
+**/
+
+/* F O O T E R */
+
 footer{
     background: #282828;
     color: #DDD;
@@ -119,6 +160,11 @@ footer div{
     padding-right: 5%;
 }
 
+.img-formaspagamento{
+    width: 12.9583em;
+    height: auto;
+}
+
 #midias img{
     margin-left: 5%;
 }
@@ -130,42 +176,3 @@ footer div{
 #icone_pagamento{
     letter-spacing: 100%;
 }
-
-/*HERO2*/
-/**
-.ul-pai{
-    border: 1px solid #fff;
-    list-style-image: url(../img/Menu.png);
-    margin: 0;
-}
-
-.hero-2 ul{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-.hero-2 ul li{
-    position: relative;
-}
-
-.hero-2 ul li ul{
-    position: absolute;
-    left: 6em;
-    top: 0;
-    display: none;
-}
-
-.hero-2 ul li ul li a{
-    display: block;
-    text-decoration: none;
-    color: #fff;
-    background-color: #282828;
-    padding: 5px;
-    border: 1px solid #aa00bb;
-}
-
-.hero-2 li:hover ul{
-    display: block;
-}
-**/
