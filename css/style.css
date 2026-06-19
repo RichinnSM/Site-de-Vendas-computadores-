@@ -6,12 +6,15 @@ body{
     font-size: 24px;
 }
 
+/* H E A D E R */
+
 .header{
     width: 100%;
     background-color: #282828;
     margin: 0;
 }
 
+/*HERO*/
 .hero{
     display: flex;
     justify-content: space-around;
@@ -71,3 +74,42 @@ body{
     font-size: 1em;
     font-family: Poppins;
 }
+
+/*HERO2*/
+/**
+.ul-pai{
+    border: 1px solid #fff;
+    list-style-image: url(../img/Menu.png);
+    margin: 0;
+}
+
+.hero-2 ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.hero-2 ul li{
+    position: relative;
+}
+
+.hero-2 ul li ul{
+    position: absolute;
+    left: 6em;
+    top: 0;
+    display: none;
+}
+
+.hero-2 ul li ul li a{
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    background-color: #282828;
+    padding: 5px;
+    border: 1px solid #aa00bb;
+}
+
+.hero-2 li:hover ul{
+    display: block;
+}
+**/
