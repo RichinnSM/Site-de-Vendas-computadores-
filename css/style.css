@@ -75,6 +75,62 @@ body{
     font-family: Poppins;
 }
 
+footer{
+    background: #282828;
+    color: #DDD;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-size: 0.8em;
+    position: absolute;
+    bottom: 0px;
+}
+
+footer ul{
+    list-style: none;
+    text-align: right;
+    padding-left: 0px;
+    
+}
+
+footer div{
+    width: 30%;
+    padding: 1% 0;
+}
+
+.logo1{
+    width: 100%;
+    font-size: 2em;
+}
+
+.midia{
+    text-align: center;
+}
+
+.atendimento{
+    text-align: justify;
+    padding-left: 5%;
+    font-size: 0.75em;
+}
+
+.meios_paga{
+    padding-right: 5%;
+}
+
+#midias img{
+    margin-left: 5%;
+}
+
+#midias{
+    width: 100%;
+}
+
+#icone_pagamento{
+    letter-spacing: 100%;
+}
+
 /*HERO2*/
 /**
 .ul-pai{
