@@ -176,3 +176,62 @@ footer div{
 #icone_pagamento{
     letter-spacing: 100%;
 }
+
+body{
+    background-color: #B8B8B8;
+}
+
+.main{
+    padding: 0 10%;
+}
+/* CARD */
+
+.card{
+    /*border: 1px solid #000;*/
+    border: 0;
+    border-radius: 6px;
+    background-color: #fff;
+    font-family: Poppins;
+    display: flex;
+    flex-direction: column;
+    width: 12%;
+    padding: .5em;
+    text-align: justify;
+    box-shadow: 0px 0px .5em #888;
+}
+
+.card-img, .card-desc, .card-preco, .card p, .card img{
+    margin: 0;
+}
+
+.card-img{
+    text-align: center;
+}
+
+.card-img img{
+    width: 100%;
+    height: auto;
+}
+
+.card-desc{
+    font-size: .7em;
+}
+
+.card-preco{
+
+}
+.preco-de{
+    color: #db3333;
+    text-decoration: line-through;
+    font-size: .5em;
+}
+.preco-por{
+    color: #1088eb;
+    font-size: .8em;
+
+}
+.preco-juros{
+    color: #777;
+    font-size: .5em;
+
+}
