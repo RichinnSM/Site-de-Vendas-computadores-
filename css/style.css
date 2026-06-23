@@ -186,6 +186,13 @@ body{
 }
 /* CARD */
 
+.sct-cards{
+    margin-top: 10em;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
 .card{
     /*border: 1px solid #000;*/
     border: 0;
@@ -198,6 +205,8 @@ body{
     padding: .5em;
     text-align: justify;
     box-shadow: 0px 0px .5em #888;
+
+    max-height: max-content;
 }
 
 .card-img, .card-desc, .card-preco, .card p, .card img{
@@ -214,18 +223,28 @@ body{
 }
 
 .card-desc{
+    display: flex;
     font-size: .7em;
 }
 
-.card-preco{
+.card-desc p{
+    flex-shrink: 2;
+}
 
+.card-preco{
+    display: flex;
+    flex-direction: column;
 }
 
 .preco-de{
     color: #db3333;
-    text-decoration: line-through;
     font-size: .5em;
 }
+
+p span{
+    text-decoration: line-through;
+}
+
 .preco-por{
     color: #1088eb;
     font-size: .8em;
