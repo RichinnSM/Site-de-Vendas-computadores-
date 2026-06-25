@@ -1,18 +1,19 @@
-/* F O R M S */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* * * * F O R M S * * * */
 
 *{
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
     font-size: 24px;
 }
 
 body{
     background-color: #b8b8b8;
+    font-family: Inter, Poppins;
 }
 
-div{
+.main-content{
     margin-top: 8em;
     width: 100%;
     display: flex;
@@ -44,7 +45,7 @@ label{
     border: 1px solid #aaa;
     border-radius: 5px;
 }
-
+/* Link para pagina de login */
 .submit{
     width: 100%;
     padding: .3em;
@@ -54,11 +55,63 @@ label{
     cursor: pointer;
 }
 
-@media screen and (max-width:600px) {
+.link{
+    text-align: right;
+    height: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+/* layout input nome */
+
+.nomes{
+    width: 100%;
+    display: flex;
+    gap: 5%;
+}
+
+.nome, .sobrenome{
+    width: 100%;    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+label a{
+    text-decoration: none;
+    color: #db3333;
+    font-size: .7em;
+}
+
+label a:hover{
+    transition: all 0.1s linear 0s;
+    font-size: .75em;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+@media screen and (max-width:1024px){
     .form{
-        padding: .3em;
+            padding: 1em;
+            width: 80%;
     }
+}
+
+@media screen and (max-width:768px) {
     inputs{
         font-size: .4em;
+    }
+
+    /* layout input nome */
+    .nomes{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:320px){ /*a partir de 278px width tem quebra no link*/
+    .form{
+        width: 90%;
+        padding: .5em;
     }
 }
