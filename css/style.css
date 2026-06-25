@@ -205,8 +205,7 @@ footer div{
     padding: .5em;
     text-align: justify;
     box-shadow: 0px 0px .5em #888;
-
-    max-height: max-content;
+    margin-bottom: 3em;
 }
 
 .card-img, .card-desc, .card-preco, .card p, .card img{
@@ -254,4 +253,52 @@ p span{
     color: #777;
     font-size: .5em;
 
+}
+
+@media screen and (min-width: 1025px){
+    .card-desc p, .preco-por{
+        font-size: .8em;
+    }
+    .preco-de, .preco-juros{
+        font-size: .5em;
+    }
+    .card{
+        max-height: 16em;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .card-desc p, .preco-por{
+        font-size: .7em;
+    }
+    .preco-de, .preco-juros{
+        font-size: .4em;
+    }
+    .card{
+        width: 24%;
+    }
+}
+
+@media screen and (max-width: 640px){
+    .card-desc p, .preco-por{
+        font-size: .7em;
+    }
+    .preco-de, .preco-juros{
+        font-size: .4em;
+    }
+    .card{
+        width: 34%;
+    }
+}
+
+@media screen and (max-width: 468px){
+    .card-desc p, .preco-por{
+        font-size: .7em;
+    }
+    .preco-de, .preco-juros{
+        font-size: .5em;
+    }
+    .card{
+        width: 70%;
+    }
 }
