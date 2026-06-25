@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    margin: 0;
+    font-family: Inter, Poppins;
+    font-size: 24px;
+    background-color: #C8C8C8;
+}
+
+section{
+    width: 60%;
+    margin: auto;
+    display: flex;
+    background: #FFFFFF;
+    padding: 3em;
+    margin-bottom: 2em;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.imagem--produto{
+    width: 60%;
+}
+
+.imagem--produto img{
+    width: 100%;
+    height: auto;
+}
+
+.info--produto{
+    background: #282828;
+    color: #ddd;
+    border-radius: 10px;
+    padding: 1em;
+    margin-left: .5em;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    width: 40%;
+    box-shadow: 3px 3px 6px #444;
+}
+
+.comprar{
+    width: 80%;
+    height: 2.5em;
+    align-self: center;
+    border-radius: 6px;
+    background: #005EB8;
+    text-align: center;
+    line-height: 2.5em;
+    text-decoration: none;
+    color: white;
+}
+
+.info--produto a:hover{
+    background: #003C97;
+    color: lightgray;
+}
+
+.info--produto h1{
+    font-size: 1.8em;
+}
+
+.preco-de{
+    color: #db3333;
+    font-size: 1.2em;
+}
+
+p span{
+    text-decoration: line-through;
+}
+
+.preco-por{
+    color: #1088eb;
+    font-size: 1.5em;
+
+}
+.preco-juros{
+    color: #777;
+    font-size: 1.2em;
+
+}
+
+article{
+    width: 60%;
+    margin: auto;
+    display: flex;
+    background: #FFFFFF;
+    padding: 3em;
+    flex-direction: column;
+    border-radius: 10px;
+    margin-bottom: 2em;
+    font-size: .8em;
+    box-sizing: border-box;
+}
