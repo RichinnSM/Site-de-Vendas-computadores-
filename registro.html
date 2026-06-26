@@ -5,29 +5,159 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro</title>
     <link rel="stylesheet" href="css/forms.css">
+    <link rel="stylesheet" href="css/reboot.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
 </head>
 <body>
-    <section class="main-content">
-        <form action="" method="post" class="form">
-            <div class="nomes">
-                <div class="nome">
-                    <label for="nome">Nome:</label>
-                <input type="text" name="nome" class="inputs">
+    <!-- Cabeçalho -->
+    <header class="header">
+        <section class="hero">
+            <div class="logo">
+                <div class="hero-logo-responsivo">
+                    <img src="" alt="" class="menu-hamburguer">
                 </div>
-                <div class="sobrenome">
-                    <label for="sobrenome">Sobrenome:</label>
-                <input type="text" name="sobrenome" class="inputs">
+
+                <h1>Carnes</h1>
+                
+                <div class="hero-logo-responsivo hero-nav-responsivo">
+                    <a href="#footer"><img src="img/call.png" class="nav-icon"></a>
+                    <a href="login.html"><img src="img/conta.png" class="nav-icon"></a>
                 </div>
             </div>
-            <label for="cpf">CPF:</label>
-            <input type="text" name="cpf" class="inputs">
-            <label for="email">Email:</label>
-            <input type="email" name="email" id="" class="inputs">
-            <label for="senha">Senha:</label>
-            <input type="password" name="senha" class="inputs">
-            <input type="submit" value="Login" class="submit">
-            <label for="link" class="link"><a href="login.html">Já tem conta?</a></label>
-        </form>
-    </section>
+
+            <div class="search_bar">
+                <form action="get" class="hero-form">
+                    <input type="text" class="pesquisa" name="search" placeholder="O que você está procurando?" size="50">
+                </form>
+            </div>
+
+            <div class="hero-nav">
+                <nav class="menu nav">
+                    <ul>
+                        <li class="contato"><a href="#footer"><img src="img/call.png" class="nav-icon"><span> Contato</span></a></li>
+                        <li class="registro"><a href="login.html"><img src="img/conta.png" class="nav-icon"><span> Login</span></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+        <section>
+
+        </section>
+        <!--<sections class="hero hero-2">
+            <div class="departamentos">
+                <ul class="ul-pai-todos ul-pai">
+                    <li class="li-pai menu-drop">
+                        <a href="">departamentos</a>
+                        <ul class="ul-pai">
+                            <li class="menu-drop">
+                                <a href="#">Hardware</a>
+                                <ul>
+                                    <li>Cooler</li>
+                                    <li>Fonte</li>
+                                    <li>Placa Mãe</li>
+                                    <li>Memória RAM</li>
+                                    <li>Placa de Vídeo</li>
+                                    <li>Processadores</li>
+                                    <li>SSD</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Perifericos</a>
+                                <ul>
+                                    <li>Teclado</li>
+                                    <li>Mouse</li>
+                                    <li>Monitor</li>
+                                    <li>Fone de ouvido</li>
+                                    <li>Microfone</li>
+                                    <li>Mousepad</li>
+                                    <li>Webcam</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Notebooks</a>
+                                <ul>
+                                    <li>Notebook</li>
+                                    <li>Notebook Gamer</li>
+                                    <li>Carregadores e fontes</li>
+                                    <li>Refrigeração e base</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                
+            </div>
+            <div></div>
+            <div></div>
+        </sections>-->
+    </header>
+
+    <!-- Main -->
+
+    <main>
+        <section class="main-content">
+            <form action="" method="post" class="form">
+                <div class="nomes">
+                    <div class="nome">
+                        <label for="nome">Nome:</label>
+                        <input type="text" name="nome" class="inputs">
+                    </div>
+                    <div class="sobrenome">
+                        <label for="sobrenome">Sobrenome:</label>
+                        <input type="text" name="sobrenome" class="inputs">
+                    </div>
+                </div>
+                <label for="cpf">CPF:</label>
+                <input type="text" name="cpf" class="inputs">
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="" class="inputs">
+                <label for="senha">Senha:</label>
+                <input type="password" name="senha" class="inputs">
+                <input type="submit" value="Login" class="submit">
+                <label for="link" class="link"><a href="login.html">Já tem conta?</a></label>
+            </form>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+
+    <footer>
+        <div class="atendimento">
+            <h2>Loja Física:</h2>
+            <p>Rua Amazonas da Silva, 27 - Vila Guilherme <br>- São Paulo/SP 02051-000</p>
+            <h2>Atendimento:</h2>
+            <p>09:00 às 22:00 - Segunda a Sábado;<br>12:00 às 20:00 - Domingos e feriados.</p>
+        </div>
+        <div class="midia">
+            <div class="logo logo1">
+                <h1 >CARNES</h1>
+            </div>
+            
+            <h2>Siga-nos</h2>
+            <div id="midias">
+                <a href="#"><img src="img/insta_logo.png" alt=""></a>
+                <a href="#"><img src="img/facebook_logo.png" alt=""></a>
+                <a href="#"><img src="img/X_logo.png" alt=""></a>
+                <a href="#"><img src="img/youtube_logo.png" alt=""></a>
+            </div>
+        </div>
+        <div class="meios_paga">
+            <ul>
+                <li>
+                    <h2>Meios de Pagamentos:</h2>
+                </li>
+                <li>
+                    <img class="img-formaspagamento" src="img/varios_pagamentos.webp" alt="">
+                </li>
+                <li id="icone_pagamento">
+                    <img src="img/pix.webp" alt="">
+                    <img src="img/boleto.webp" alt="">
+                    <img src="img/mercadopago2c.webp" alt="">
+                    <img src="img/nupay.webp" alt="">
+                </li>
+            </ul>
+        </div>
+    </footer>
 </body>
 </html>

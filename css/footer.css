@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* * * * F O O T E R * * * */
+
+footer{
+    margin-top: 2em;
+    background: #282828;
+    color: #DDD;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-size: 0.8em;
+    /* position: absolute; */ /*se ficar absolute nao da certo*/
+    bottom: 0px;
+
+}
+
+footer ul{
+    list-style: none;
+    text-align: right;
+    padding-left: 0px;
+}
+
+footer div{
+    width: 30%;
+    padding: 1% 0;
+}
+
+.logo1{
+    width: 100%;
+    font-size: 2em;
+}
+
+.midia{
+    text-align: center;
+}
+
+.atendimento{
+    text-align: justify;
+    padding-left: 5%;
+    font-size: 0.75em;
+}
+
+.meios_paga{
+    padding-right: 5%;
+}
+
+.img-formaspagamento{
+    width: 12.9583em;
+    height: auto;
+}
+
+#midias img{
+    margin-left: 5%;
+}
+
+#midias{
+    width: 100%;
+}
+
+#icone_pagamento{
+    letter-spacing: 100%;
+}
