@@ -98,7 +98,7 @@ li.registro{
         gap: .5em;
     }
     /* Menu, Logo, Nav */
-    .logo{
+    .logo1{
         display: flex;
         align-items: center;
         justify-content: space-between;
