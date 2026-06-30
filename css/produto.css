@@ -25,14 +25,13 @@
 .info--produto{
     background: #282828;
     color: #ddd;
-    border-radius: 10px;
+    width: 40%;
     padding: 1em;
-    /* margin-left: .5em; */
     display: flex;
     flex-direction: column;
     align-items: start;
     justify-content: space-between;
-    width: 40%;
+    border-radius: 10px;
     box-shadow: 3px 3px 6px #444;
 }
 
@@ -62,7 +61,7 @@
     font-size: 1.2em;
 }
 
-p span{
+.preco-de span{
     text-decoration: line-through;
 }
 
@@ -78,7 +77,7 @@ p span{
 }
 
 article{
-    width: 60%;
+    width: 70%;
     margin: auto;
     margin-bottom: 5em;
     padding: 3em;
@@ -87,8 +86,93 @@ article{
     font-size: .8em;
     background: #FFFFFF;
     border-radius: 10px;
+    text-align: justify;
 }
 
 article p{
     margin-top: 1em;
+}
+
+article>p>span{
+    font-weight: bold;
+    text-align: start;
+}
+
+@media screen and (max-width:1680px){
+    .info--produto h1{
+        font-size: 1.5em;
+    }
+    .preco-de, .preco-juros, .frete{
+        font-size: .8em;
+    }
+    .preco-por{
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (max-width:1500px){
+    article, .main-content-produto{
+        width: 85%;
+    }
+    .info--produto h1{
+        font-size: 1.2em;
+    }
+    .preco-de, .preco-juros, .frete{
+        font-size: .6em;
+    }
+    .preco-por{
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width:1048px){
+    article, .main-content-produto{
+        width: 90%;
+    }
+    .info--produto h1{
+        font-size: 1em;
+    }
+    .preco-de, .preco-juros, .frete{
+        font-size: .5em;
+    }
+    .preco-por{
+        font-size: .8em;
+    }
+}
+
+@media screen and (max-width:768px){
+    article, .main-content-produto{
+        padding: 2em 5%;
+    }
+    .main-content-produto{
+        margin-top: 2em;
+        flex-direction: column;
+        gap: 1em;
+        align-items: center;
+    }
+    .imagem--produto{
+        width: 90%;
+    }
+    .info--produto{
+        width: 100%;
+        gap: .7em;
+    }
+    .info--produto h1, article>h1{
+        font-size: 1.43em;
+    }
+    .preco-de, .preco-juros, .frete, article>p{
+        font-size: .8em;
+    }
+    .preco-por{
+        font-size: 1.2em;
+    }
+    .comprar{
+        width: 100%;
+    }
+    article{
+        margin-bottom: 2em;
+    } 
+    article>h1{
+        text-align: start;
+    }
 }
