@@ -95,11 +95,14 @@ label a:hover{
 @media screen and (max-width:1200px){
     .form{
             padding: 1em;
-            width: 80%;
+            width: 75%;
     }
 }
 
 @media screen and (max-width:768px) {
+    .form{
+        width: 80%;
+    }
     inputs{
         font-size: .4em;
     }

@@ -1,25 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-body{
-    margin: 0;
-    font-family: Inter, Poppins;
-    font-size: 24px;
-    background-color: #C8C8C8;
-}
-
-section{
-    width: 60%;
+.main-content-produto{
+    width: 70%;
     margin: auto;
     display: flex;
+    justify-content: space-between;
     background: #FFFFFF;
-    padding: 3em;
+    padding: 2em;
     margin-bottom: 2em;
+    margin-top: 5em;
     border-radius: 10px;
     box-sizing: border-box;
 }
 
 .imagem--produto{
-    width: 60%;
+    width: 50%;
 }
 
 .imagem--produto img{
@@ -32,7 +27,7 @@ section{
     color: #ddd;
     border-radius: 10px;
     padding: 1em;
-    margin-left: .5em;
+    /* margin-left: .5em; */
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -85,12 +80,15 @@ p span{
 article{
     width: 60%;
     margin: auto;
-    display: flex;
-    background: #FFFFFF;
+    margin-bottom: 5em;
     padding: 3em;
+    display: flex;
     flex-direction: column;
-    border-radius: 10px;
-    margin-bottom: 2em;
     font-size: .8em;
-    box-sizing: border-box;
+    background: #FFFFFF;
+    border-radius: 10px;
+}
+
+article p{
+    margin-top: 1em;
 }

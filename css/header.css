@@ -102,7 +102,7 @@ li.registro{
         display: flex;
         align-items: center;
         justify-content: space-between;
-        min-width: 10.4em;
+        /* min-width: 10.4em; */
     }
     /*imagens aparecem*/
     .hero-logo-responsivo{
@@ -111,6 +111,12 @@ li.registro{
     /*tira a nav*/
     .hero-nav{
         display: none;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .logo1 h1{
+        font-size: 1em;
     }
 }
 
