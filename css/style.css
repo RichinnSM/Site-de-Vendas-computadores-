@@ -235,11 +235,13 @@ footer div{
 /* .main{padding: 0 10%;} */
 /* C A R D S */
 
-.sct-cards{
-    margin-top: 10em;
+.sct-cards{ 
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+    margin-top: 10em;
 }
 
 .card{
@@ -250,11 +252,16 @@ footer div{
     font-family: Poppins;
     display: flex;
     flex-direction: column;
-    width: 12%;
+    width: 15%;
     padding: .5em;
     text-align: justify;
     box-shadow: 0px 0px .5em #888;
     margin-bottom: 3em;
+    justify-content: space-between;
+}
+
+.card7, .card8{
+    display: none;
 }
 
 .card-img, .card-desc, .card-preco, .card p, .card img{
@@ -275,10 +282,6 @@ footer div{
     font-size: .7em;
 }
 
-.card-desc p{
-    flex-shrink: 2;
-}
-
 .card-preco{
     display: flex;
     flex-direction: column;
@@ -295,7 +298,7 @@ p span{
 
 .preco-por{
     color: #1088eb;
-    font-size: .8em;
+    font-size: .7em;
 
 }
 .preco-juros{
@@ -304,15 +307,18 @@ p span{
 
 }
 
-@media screen and (min-width: 1025px){
+@media screen and (max-width: 1400px){
     .card-desc p, .preco-por{
-        font-size: .8em;
+        font-size: .7em;
     }
     .preco-de, .preco-juros{
-        font-size: .5em;
+        font-size: .35em;
     }
     .card{
-        max-height: 16em;
+        width: 22%;
+    }
+    .card7, .card8{
+        display: flex;
     }
 }
 
@@ -323,32 +329,38 @@ p span{
     .preco-de, .preco-juros{
         font-size: .4em;
     }
-    .card{
-        width: 24%;
+    .card7, .card8{
+        display: none;
     }
+    .card{
+        width: 30%;
+    }
+    
+    
 }
 
 @media screen and (max-width: 640px){
-    .card-desc p, .preco-por{
-        font-size: .7em;
-    }
-    .preco-de, .preco-juros{
-        font-size: .4em;
-    }
     .card{
-        width: 34%;
+        width: 45%;
     }
 }
 
 @media screen and (max-width: 468px){
+    .sct-cards{
+        width: 100%;
+    }
+    .card-img img{
+        width: 50%;
+    }
     .card-desc p, .preco-por{
-        font-size: .7em;
+        font-size: 1em;
+        flex-shrink: 2;
     }
     .preco-de, .preco-juros{
-        font-size: .5em;
+        font-size: .7em;
     }
     .card{
-        width: 70%;
+        width: 90%;
     }
 }
 
