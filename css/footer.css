@@ -66,6 +66,7 @@ footer div{
     display: flex;
     align-items: center;
     justify-content: end;
+    gap: .5em;
 }
 
 @media screen and (max-width: 1024px){
@@ -111,6 +112,8 @@ footer div{
         flex-direction: column;
         align-items: center;
         font-size: .75em;
+        padding: 1em 0;
+        gap: .5em;
     }
     footer div{
         width: 90%;
@@ -129,6 +132,12 @@ footer div{
     }
     .atendimento{
         text-align: center;
+    }
+    .midia{
+        order: 1;
+    }
+    .atendimento{
+        order: 2;
     }
 
 }
