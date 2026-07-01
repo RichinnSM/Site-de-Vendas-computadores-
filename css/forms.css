@@ -66,17 +66,40 @@ label{
 
 /* layout input nome */
 
-.nomes{
+.nomes, .radio-check-pai{
     width: 100%;
     display: flex;
     gap: 5%;
 }
 
-.nome, .sobrenome{
+.nomes>div, .radio-check-pai>div{
     width: 100%;    
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+}
+
+.radio-check{
+    gap: .2em;
+}
+
+.radio-check>div{
+    display: flex;
+}
+
+.radio-check>div>label{
+    margin: 0;
+    font-weight: 400;
+}
+
+input[type=radio], input[type=checkbox]{
+    margin-right: 1em;
+    justify-content: center;
+    align-items: center;
+}
+
+textarea{
+    width: 100%;
 }
 
 label a{
@@ -91,6 +114,13 @@ label a:hover{
     font-weight: bold;
     text-decoration: underline;
 }
+
+
+hr{
+    margin: 1em 0;
+    border: 1px solid #c8c8c8;
+}
+
 
 @media screen and (max-width:1200px){
     .form{
@@ -110,6 +140,13 @@ label a:hover{
     /* layout input nome */
     .nomes{
         flex-direction: column;
+    }
+}
+
+@media screen and (max-width:550px){
+    .radio-check-pai{
+        flex-direction: column;
+        gap: 1em;
     }
 }
 

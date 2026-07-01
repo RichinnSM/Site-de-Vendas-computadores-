@@ -88,7 +88,11 @@ li.registro{
     font-size: 1em;
     text-decoration: none;
     color: #db3333;
-    text-shadow: 1.5px 1.5px 1px #000;
+    /* text-shadow: 1.5px 1.5px 1px #000; */ /*Dava piorando o contraste que ja n ta legal*/
+}
+
+.menu ul li a:hover span{
+    border-bottom: 1px solid #ff0000;
 }
 
 @media screen and (max-width: 1024px) {

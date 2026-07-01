@@ -35,8 +35,8 @@
             <div class="hero-nav">
                 <nav class="menu nav">
                     <ul>
-                        <li class="contato"><a href="#footer"><img src="img/call.png" class="nav-icon"><span> Contato</span></a></li>
-                        <li class="registro"><a href="login.html"><img src="img/conta.png" class="nav-icon"><span> Login</span></a></li>
+                        <li class="contato"><a href="#footer"><img src="img/call.png" class="nav-icon"> <span>Contato</span></a></li>
+                        <li class="registro"><a href="login.html"><img src="img/conta.png" class="nav-icon"> <span>Login</span></a></li>
                     </ul>
                 </nav>
             </div>
@@ -99,21 +99,77 @@
         <section class="main-content">
             <form action="" method="post" class="form">
                 <div class="nomes">
-                    <div class="nome">
+                    <div>
                         <label for="nome">Nome:</label>
                         <input type="text" name="nome" class="inputs">
                     </div>
-                    <div class="sobrenome">
+                    <div>
                         <label for="sobrenome">Sobrenome:</label>
                         <input type="text" name="sobrenome" class="inputs">
                     </div>
                 </div>
                 <label for="cpf">CPF:</label>
-                <input type="text" name="cpf" class="inputs">
+                <input type="text" name="cpf" class="inputs" placeholder="xxx.xxx.xxx-xx">
+
+                <label for="data_nasc">Data de Nascimento:</label>
+                <input type="text" name="data_nasc" class="inputs" placeholder="dd-mm-aaaa">
+
+                <label for="profissao">Profissão:</label>
+                <input type="text" name="profissao" class="inputs">
+
+                <label for="telefone">Telefone Residencial:</label>
+                <input type="text" name="telefone" class="inputs">
+
                 <label for="email">Email:</label>
                 <input type="email" name="email" id="" class="inputs">
+
+
+                <div class="radio-check-pai">
+                    <div class="radio-check">
+                        <label for="sexo">Sexo:</label>
+                        <div><input type="radio" name="sexo" id="masculino"> Masculino</div>
+                        <div><input type="radio" name="sexo" id="feminino"> Feminino</div>
+                        <div><input type="radio" name="sexo" id="outro"> Outro</div>
+                    </div>
+                
+                    <div class="radio-check">
+                        <label for="sexo">Estado Civil:</label>
+                        <div><input type="checkbox" name="sexo" id="masculino"> <label for="">Casado</label></div>
+                        <div><input type="checkbox" name="sexo" id="feminino"> <label for="">Solteiro</label></div>
+                        <div><input type="checkbox" name="sexo" id="outro"> <label for="">Divorciado</label></div>
+                        <div><input type="checkbox" name="sexo" id="outro"> <label for="">Outro</label></div>
+                    </div>
+                </div>              
+
+                <hr> <!-- linha divisoria -->
+                <!-- <label for="Endereco" class="form_endereco">Endereço:</label> -->
+                <label for="rua">Rua:</label>
+                <input type="text" name="rua" class="inputs">
+
+                <div class="nomes">
+                    <div>
+                        <label for="cidade">Cidade:</label>
+                        <input type="text" name="cidade" class="inputs">
+                    </div>
+                    <div>
+                        <label for="estado">Estado:</label>
+                        <input type="text" name="estado" class="inputs">
+                    </div>
+                    <div>
+                        <label for="cep">CEP:</label>
+                        <input type="text" name="cep" class="inputs">
+                    </div>
+                </div>
+
+                <hr> <!-- linha divisoria -->
+                <label for="observacoes">Observações:</label>
+                <textarea name="observacoes" rows="10"></textarea>
+
+                <hr> <!-- linha divisoria -->
+
                 <label for="senha">Senha:</label>
                 <input type="password" name="senha" class="inputs">
+
                 <input type="submit" value="Login" class="submit">
                 <label for="link" class="link"><a href="login.html">Já tem conta?</a></label>
             </form>
