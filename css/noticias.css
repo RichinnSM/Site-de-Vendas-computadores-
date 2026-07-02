@@ -1,0 +1,59 @@
+main>h1{
+    margin: 1em 0 1.5em 1.5em;
+    font-size: 2em;
+    font-weight: 600;
+}
+
+hr{
+    margin: .5em 0 .5em 3em;
+    border: .01em #c8c8c8 solid;
+}
+
+.card-pai{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    margin-bottom: 5em;
+}
+
+.cards{
+    width: 100%;
+    display: flex;
+    padding: 0 3em;
+    gap: 2em;
+    /* border: 1px solid blue; */
+}
+
+.cards img{
+    width: 15em;
+    height: auto;
+    border-radius: 5px;
+}
+
+.cards-texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: .2em 0;
+    width: 57%;
+}
+
+.cards-texto h2{
+    font-weight: 500;
+    font-size: 1.3em;
+}
+
+.cards-texto p{
+    font-size: 1em;
+}
+
+.cards-texto a{
+    font-size: 1em;
+    text-decoration: none;
+    color: #0056fe;
+}
+
+.cards-texto a:hover{
+    text-decoration: underline #222;
+    /* color: #000; */
+}
