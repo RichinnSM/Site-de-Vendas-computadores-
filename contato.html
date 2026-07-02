@@ -3,15 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carnes</title>
-    <!-- <link rel="stylesheet" href="css/style.css"> -->
-    <link rel="stylesheet" href="css/reboot.css">
-    <link rel="stylesheet" href="css/header.css">
+    <title>Document</title>
     <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/mainpage.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/reboot.css">
+    <link rel="stylesheet" href="css/forms.css">
 </head>
 <body>
-    <!-- Cabecalho -->
+    <!-- HEADER -->
     <header class="header">
         <section class="hero">
             <div class="logo logo1">
@@ -28,7 +27,7 @@
             </div>
 
             <div class="search_bar">
-                <form action="get" class="form">
+                <form action="get" class="hero-form">
                     <input type="text" class="pesquisa" name="search" placeholder="O que você está procurando?" size="50">
                 </form>
             </div>
@@ -36,8 +35,8 @@
             <div class="hero-nav">
                 <nav class="menu nav">
                     <ul>
-                        <li class="contato"><a href="contato.html"><img src="img/call.png" class="nav-icon"><span> Contato</span></a></li>
-                        <li class="registro"><a href="login.html"><img src="img/conta.png" class="nav-icon"><span> Login</span></a></li>
+                        <li class="contato"><a href="#footer"><img src="img/call.png" class="nav-icon"> <span>Contato</span></a></li>
+                        <li class="registro"><a href="login.html"><img src="img/conta.png" class="nav-icon"> <span>Login</span></a></li>
                     </ul>
                 </nav>
             </div>
@@ -93,12 +92,35 @@
             <div></div>
         </sections>-->
     </header>
+    <!-- MAIN -->
 
-    <!-- Main -->
-     
+    <main>
+        <section class="main-content-contato">
+            <form action="" method="post" class="form">
+                <label for="email">Email do Remetente:</label>
+                <input type="email" class="inputs">
+                <label for="assunto">Assunto da mensagem:</label>
+                <input type="text" class="inputs">
+                <label for="observacoes">Sua mensagem:</label>
+                <textarea name="observacoes" rows="15"></textarea>
+                <input type="submit" class="submit-contato"><br>
+                <input type="reset" value="Limpar" class="submit-contato">
+            </form>
+        </section>
+        <section class="contatos">
+            <div class="tel">
+                <h4><img src="img/call-preto.svg" alt="">Telefone de contato:</h4>
+                <p>4002-8922</p>
+            </div>
+            <div class="email-contato">
+                <h4><img src="img/email.svg" alt="">Email de contato:</h4>
+                <p>lojatop@gmail.com</p>
+            </div>
+        </section>
+    </main>
 
-    <!-- Footer -->
-    <footer>
+    <!-- FOOTER -->
+     <footer>
         <div class="atendimento">
             <h2>Loja Física:</h2>
             <p>Rua Amazonas da Silva, 27 - Vila Guilherme - São Paulo/SP 02051-000</p>
@@ -135,5 +157,5 @@
             </ul>
         </div>
     </footer>
-</body> 
+</body>
 </html>
