@@ -4,7 +4,8 @@
 
 footer{
     margin-top: 2em;
-    background: #282828;
+    /* background: #282828; */
+    background-color: #1f1f1f;
     color: #DDD;
     display: flex;
     justify-content: space-between;

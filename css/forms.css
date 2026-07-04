@@ -100,6 +100,8 @@ input[type=radio], input[type=checkbox]{
 
 textarea{
     width: 100%;
+    max-width: 100%;
+    min-width: 100%;
 }
 
 label a{
@@ -115,11 +117,12 @@ label a:hover{
     text-decoration: underline;
 }
 
-
 hr{
     margin: 1em 0;
     border: 1px solid #c8c8c8;
 }
+
+/* Formulario de Contato */
 
 .main-content-contato{
     margin: 2em 0 2em 0;
@@ -140,41 +143,6 @@ hr{
     height: 2.5em;
     font-size: .75em;
 }
-
-.contatos{
-    background: #eee;
-    width: 50%;
-    margin: 20px auto;
-    border-radius: 7px;
-    box-shadow: 0px 0px 7px #888;
-    padding: .5em 0;
-}
-
-.tel, .email-contato{
-    background: #ccc;
-    width: 90%;
-    margin: .5em auto;
-    padding: .75em;
-    border-radius: 7px;
-    border-top: #F55 solid 3px;
-}
-
-.contatos div h4{
-    color: black;
-    margin: .25em 0;
-}
-
-.contatos div p{
-    font-weight: bold;
-    font-style: italic;
-}
-
-.contatos div h4 img{
-    position: relative;
-    top: 3px;
-    margin-right: .4em;
-}
-
 
 @media screen and (max-width:1200px){
     .form{

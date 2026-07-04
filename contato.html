@@ -3,11 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Entre em Contato</title>
+
+    <!-- <link rel="stylesheet" href="public/css/bootstrap.min.css"> -->
+
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/reboot.css">
     <link rel="stylesheet" href="css/forms.css">
+    <link rel="stylesheet" href="css/contato.css">
 </head>
 <body>
     <!-- HEADER -->
@@ -40,9 +44,6 @@
                     </ul>
                 </nav>
             </div>
-        </section>
-        <section>
-
         </section>
         <!--<sections class="hero hero-2">
             <div class="departamentos">
@@ -92,29 +93,114 @@
             <div></div>
         </sections>-->
     </header>
-    <!-- MAIN -->
 
+    <!-- MAIN -->
     <main>
-        <section class="main-content-contato">
+        <!-- Logo -->
+        <section>
+            <div class="logo1 logo contato-logo">
+                <h1 class="">Carnes</h1>
+            </div>
+        </section>
+
+        <!-- Cards que redirecionam -->
+        <section class="contato-cards">
+            <a href="#cont-form">
+                <div class="cards">
+                    <p>Formulário</p>
+                </div>
+            </a>
+            
+            <a href="#">
+                <div class="cards">
+                    <p>Dúvidas Frequentes</p>
+                </div>
+            </a>
+            
+            <a href="#cont-contato">
+                <div class="cards">
+                    <p>Contato</p>
+                </div>
+            </a>
+        </section>
+
+        <hr> <!-- linha divisória -->
+
+        <!-- Formulario para contato -->
+        <section class="main-content-contato" id="cont-form">
             <form action="" method="post" class="form">
                 <label for="email">Email do Remetente:</label>
                 <input type="email" class="inputs">
+
                 <label for="assunto">Assunto da mensagem:</label>
                 <input type="text" class="inputs">
+
                 <label for="observacoes">Sua mensagem:</label>
                 <textarea name="observacoes" rows="15"></textarea>
-                <input type="submit" class="submit-contato"><br>
+
+                <input type="submit" class="submit-contato">
                 <input type="reset" value="Limpar" class="submit-contato">
             </form>
         </section>
-        <section class="contatos">
-            <div class="tel">
-                <h4><img src="img/call-preto.svg" alt="">Telefone de contato:</h4>
-                <p>4002-8922</p>
+
+        <hr> <!-- linha divisória -->
+
+        <!-- Dúvidas frequentes -->
+        <section>
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Accordion Item #1
+                    </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Accordion Item #2
+                    </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Accordion Item #3
+                    </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="email-contato">
-                <h4><img src="img/email.svg" alt="">Email de contato:</h4>
-                <p>lojatop@gmail.com</p>
+        </section>
+
+        <hr> <!-- linha divisória -->
+
+        <!-- Email e telefone para contato -->
+        <section class="para-contato" id="cont-contato">
+            <h1>Contato</h1>
+            <div class="contatos">
+                <div class="tel">
+                    <h4><img src="img/call-preto.svg" alt="">Telefone de contato:</h4>
+                    <p>4002-8922</p>
+                </div>
+                <div class="email">
+                    <h4><img src="img/email.svg" alt="">Email de contato:</h4>
+                    <p>lojatop@gmail.com</p>
+                </div>
             </div>
         </section>
     </main>
@@ -157,5 +243,7 @@
             </ul>
         </div>
     </footer>
+
+    <script src="public/js/bootstrap.min.js"></script>
 </body>
 </html>

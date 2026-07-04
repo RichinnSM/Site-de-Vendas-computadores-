@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+    background-color: #282828;
+}
+/* Logo */
+.contato-logo{
+    font-size: 5em;
+    text-align: center;
+    margin: .5em 0;
+}
+.contato-logo h1{
+    text-shadow: 8px 10px 2px #ff0000;
+}
+
+/* Cards que Redirecionam */
+.contato-cards{
+    font-family: Orbitron;
+    margin: 2.5em 0;
+    padding: 0 20%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contato-cards a{
+    text-decoration: none;
+    color: #FFF;
+    width: 30%;
+}
+
+.cards{
+    background-color: #E9112E;
+    padding: 1em;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.contato-cards a:hover .cards{
+    background-color: rgb(233, 17, 46, .8);
+}
+
+/* Email e Telefone para Contato */
+.para-contato{         /*Section*/
+    font-family: Orbitron;
+    color: #fff;
+    margin: 2em 0 5em 0;
+    width: 100%;
+    padding: 0 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+.para-contato>h1{
+    text-align: center;
+}
+
+.contatos{
+    width: 100%;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: end;
+    border-radius: 7px;
+}
+
+.tel, .email{
+    background-color: #E9112E;
+    padding: 1em;
+    border-radius: 10px;
+}
+
+.contatos div h4{
+    margin: .25em 0;
+}
+
+.contatos div p{
+    font-weight: bold;
+    font-style: italic;
+}
+
+.contatos div h4 img{
+    position: relative;
+    top: 3px;
+    margin-right: .4em;
+}
