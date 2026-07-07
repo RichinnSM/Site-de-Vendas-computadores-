@@ -8,10 +8,12 @@
 /* C A R D S */
 
 .sct-cards{
-    margin-top: 10em;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+    margin-top: 4em;
 }
 
 .card{
@@ -22,11 +24,16 @@
     font-family: Poppins;
     display: flex;
     flex-direction: column;
-    width: 12%;
+    width: 15%;
     padding: .5em;
     text-align: justify;
     box-shadow: 0px 0px .5em #888;
     margin-bottom: 3em;
+    justify-content: space-between;
+}
+
+.card7, .card8{
+    display: none;
 }
 
 .card-img, .card-desc, .card-preco, .card p, .card img{
@@ -76,7 +83,32 @@ p span{
 
 }
 
-@media screen and (min-width: 1025px){
+.link-produto{
+    text-decoration: none;
+    color: black;
+}
+
+.link-produto:visited{
+    text-decoration: none;
+    color: black;
+}
+
+@media screen and (max-width: 1400px){
+    .card-desc p, .preco-por{
+        font-size: .7em;
+    }
+    .preco-de, .preco-juros{
+        font-size: .35em;
+    }
+    .card{
+        width: 22%;
+    }
+    .card7, .card8{
+        display: flex;
+    }
+}
+
+/* @media screen and (min-width: 1025px){
     .card-desc p, .preco-por{
         font-size: .8em;
     }
@@ -86,7 +118,7 @@ p span{
     .card{
         max-height: 16em;
     }
-}
+} */
 
 @media screen and (max-width: 1024px){
     .card-desc p, .preco-por{
@@ -96,7 +128,10 @@ p span{
         font-size: .4em;
     }
     .card{
-        width: 24%;
+        width:32%;
+    }
+    .card7, .card8{
+        display: none;
     }
 }
 
@@ -108,11 +143,17 @@ p span{
         font-size: .4em;
     }
     .card{
-        width: 34%;
+        width: 48%;
+    }
+    .card7, .card8{
+        display: none;
     }
 }
 
 @media screen and (max-width: 468px){
+    .card-img img{
+        width: 50%;
+    }
     .card-desc p, .preco-por{
         font-size: .7em;
     }
@@ -120,6 +161,6 @@ p span{
         font-size: .5em;
     }
     .card{
-        width: 70%;
+        width: 90%;
     }
 }
