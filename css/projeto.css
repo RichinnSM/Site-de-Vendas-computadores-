@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.corpo-projeto{
+    width: 90%;
+    margin: auto;
+    color: white;
+}
+
+.corpo-projeto h1{
+    margin: 0 auto 0 auto;
+    margin-top: 1em;
+    background-color: #E9112E;
+    padding: .75em;
+    border-radius: 10px;
+    display: inline-block;
+    font-family: Orbitron;
+}
+
+#centralization{
+    text-align: center;
+}
+
+
+.container-info{
+    margin: 1.5em auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 80%;
+}
+
+hr{
+    margin: .5em 0 .5em 1em;
+    border: .01em #c8c8c8 solid;
+}
+
+.info{
+    width: 100%;
+    margin: .5em;
+    border-radius: 10px;
+    padding: .5em;
+}
+
+.info h3{
+    background: white;
+    display: inline-block;
+    color: black;
+    margin-bottom: .5em;
+    padding: .1em .25em;
+    border-radius: 8px;
+    border-bottom: #ff0000 solid 3px;
+}
+
