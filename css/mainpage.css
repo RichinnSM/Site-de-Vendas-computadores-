@@ -164,3 +164,16 @@ p span{
         width: 90%;
     }
 }
+
+/* BANNER */
+
+.sct-banner{
+    width: 60%;
+    margin: auto;
+}
+
+.sct-banner img{
+    width: 100%;
+    /* height: 18em; */
+    border-radius: 10px;
+}
