@@ -109,6 +109,6 @@ body{
     }
 }
 
-@media screen and {
+@media screen and (max-width:960px){
     
 }
