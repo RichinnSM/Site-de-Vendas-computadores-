@@ -51,3 +51,26 @@ hr{
     border-bottom: #ff0000 solid 3px;
 }
 
+@media screen and (max-width: 1024px){
+    .container-info{
+        width: 90%;
+    }
+    .corpo-projeto h1{
+        font-size: 1.75em;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .corpo-projeto h1{
+        font-size: 1.25em;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .container-info{
+        width: 100%;
+    }
+    .corpo-projeto h1{
+        font-size: 1em;
+    }
+}
