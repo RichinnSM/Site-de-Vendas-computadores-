@@ -14,15 +14,44 @@ footer{
 .footer-sct{
     display: flex;
     justify-content: space-between;
+    font-size: 0.6em;
 }
 
 .footer-sct div{
     width: 50%;
+    text-align: center;
+}
+
+.footer-sct div h1{
+    padding: .5em;
 }
 
 .footer-sct div a{
     color: #fff;
     text-decoration: none;
+    width: 50%;
+    padding: .5em;
+    background-color: #E9112E;
+    border-radius: 5px;
+}
+
+.footer-sct div a:hover{
+    background-color: rgb(233, 17, 46, .8);
+    text-decoration: underline;
+    transition: all .1s ease-in 0s;
+}
+
+.footer-noticias{
+    text-align: right;
+    border-left: 1px solid #888;
+}
+
+.footer-projeto{
+    border-right: 1px solid #888;
+}
+
+.footer-hr{
+    border-color: #888;
 }
 
 .footer{
@@ -51,15 +80,14 @@ footer{
 
 .logo2{
     width: 100%;
-    font-size: 2em;
 }
 
-.logo2>h1{
+.midia>h1{
     width: 100%;
     display: flex;
 }
 
-.logo2>h1>img{
+.midia>h1>img{
     width: 100%;
     height: auto;
 }
@@ -103,16 +131,12 @@ footer{
     footer{
         font-size: .5em;
     }
-    .logo2{
-        font-size: 2em;
-    }
     .redes_sociais{
         width: 2em;
     }
     #pagamento_faixa{
         padding-top: 1em;
     }
-
 }
 
 @media screen and (max-width: 800px){
@@ -134,7 +158,7 @@ footer{
     }
 }
 
-@media screen and (max-width: 425px){
+@media screen and (max-width: 440px){
     .footer{
         flex-direction: column;
         align-items: center;
@@ -165,5 +189,20 @@ footer{
     }
     .atendimento{
         order: 2;
+    }
+}
+
+@media screen and (max-width: 300px){
+    .footer-sct{
+        flex-direction: column;
+        gap: 2em;
+        align-items: center;
+    }
+    .footer-sct div{
+        border: 0;
+        width: 100%;
+    }
+    .footer-sct div h1{
+        width: 100%;
     }
 }
