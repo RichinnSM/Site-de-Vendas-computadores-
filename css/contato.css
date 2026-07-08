@@ -9,9 +9,9 @@ body{
 }
 /* Logo */
 .contato-logo{
-    margin: .5em 10%;
+    margin: .5em 25%;
     text-align: center;
-    width: 80%;
+    width: 50%;
 }
 
 .contato-logo img{
@@ -39,6 +39,9 @@ body{
     padding: 1em;
     border-radius: 10px;
     text-align: center;
+    display: flex;      /*flex para eles se alinharem verticalmente sempre*/
+    align-items: center;
+    justify-content: center;
 }
 
 .contato-cards a:hover .cards{
@@ -60,13 +63,11 @@ body{
 .para-contato>h1{
     text-align: center;
 }
-
+/*Cards com email e telefone para contato*/
 .contatos{
     width: 100%;
-    padding: 0;
     display: flex;
     justify-content: space-evenly;
-    align-items: end;
     border-radius: 7px;
 }
 
@@ -91,24 +92,39 @@ body{
     margin-right: .4em;
 }
 
-@media screen and (max-width:1514px){
+@media screen and (max-width:1513px){
     .cards{
         height: 100%;
-    }
-    .card-center{
-        line-height: 2.5em;
     }
     .para-contato{
         padding: 0 10%;
     }
+
 }
 
 @media screen and (max-width:1200px){
     .para-contato{
         padding: 0 5%;
     }
+    .contato-logo{
+        margin: .5em 15%;
+        text-align: center;
+        width: 70%;
+    }
+    .contato-cards{
+        margin-top: .8em;
+    }
 }
 
 @media screen and (max-width:960px){
+    .cards{
+        font-size: .5em;
+    }
+}
+
+@media screen and (max-width:420px){
+    .contato-cards{
+        flex-direction: column;
+    }
     
 }

@@ -4,29 +4,49 @@
 
 footer{
     margin-top: 2em;
-    /* background: #282828; */
     background-color: #1f1f1f;
+    display: flex;
+    flex-direction: column;
+    padding: 2em 5% 0 5%;
+    gap: 1em;
+}
+
+.footer-sct{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-sct div{
+    width: 50%;
+}
+
+.footer-sct div a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer{
+    width: 100%;
     color: #DDD;
+    font-size: 0.75em;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
-    font-size: 0.75em;
-    /*position: absolute; /* /*se ficar absolute nao da certo*/
-    bottom: 0px;
-    box-sizing: border-box;
-
 }
 
-footer ul{
+.footer ul{
     list-style: none;
     text-align: right;
     padding-left: 0px;
 }
 
-footer div{
+.footer div{
     width: 30%;
     padding: 1% 0;
+}
+
+.midia{
+    text-align: center;
 }
 
 .logo2{
@@ -34,8 +54,14 @@ footer div{
     font-size: 2em;
 }
 
-.midia{
-    text-align: center;
+.logo2>h1{
+    width: 100%;
+    display: flex;
+}
+
+.logo2>h1>img{
+    width: 100%;
+    height: auto;
 }
 
 .atendimento{
@@ -53,13 +79,13 @@ footer div{
     height: auto;
 }
 
+#midias{
+    width: 100%;
+}
+
 #midias img{
     margin-left: 5%;
     display: inline-block;
-}
-
-#midias{
-    width: 100%;
 }
 
 #icone_pagamento{
@@ -72,7 +98,7 @@ footer div{
 
 @media screen and (max-width: 1024px){
     div ul li img{
-    width: 3em;
+        width: 3em;
     }
     footer{
         font-size: .5em;
@@ -91,7 +117,7 @@ footer div{
 
 @media screen and (max-width: 800px){
     div ul li img{
-    width: 2.5em;
+        width: 2.5em;
     }
     footer{
         font-size: .5em;
@@ -109,18 +135,18 @@ footer div{
 }
 
 @media screen and (max-width: 425px){
-    footer{
+    .footer{
         flex-direction: column;
         align-items: center;
         font-size: .75em;
         padding: 1em 0;
         gap: .5em;
     }
-    footer div{
+    .footer div{
         width: 90%;
     }
     div ul li img{
-    width: 4em;
+        width: 4em;
     }
     .logo2{
         font-size: 1.5em;
@@ -140,5 +166,4 @@ footer div{
     .atendimento{
         order: 2;
     }
-
 }
