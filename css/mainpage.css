@@ -51,6 +51,11 @@
     height: auto;
 }
 
+.card:hover {
+    transform: scale(1.1);
+    transition: all .1s linear .1s;
+}
+
 .card-desc{
     display: flex;
     font-size: .7em;
