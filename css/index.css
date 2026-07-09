@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+main{
+    width: 80%;
+    margin: 3em 10%;
+    color: #c8c8c8;
+    font-family: Poppins;
+}
+
+hr{
+    margin: 2em 0;
+    border-color: #c8c8c8;
+}
+
+/* Logo */
+.logo-index{
+    width: 50%;
+    margin: 1em 25%;
+}
+
+.logo-index img{
+    width: 100%;
+    height: auto;
+}
+
+.logo-index a:hover img{
+    transform: scale(1.05);
+}
+
+/*txt abaixo da logo*/
+.logo-index p{
+    font-size: .5em;
+    vertical-align: super;
+    text-align: right;
+}
+
+/* Primeiro Article */
+.txt-1{
+    text-align: center;
+}
+
+.txt-1 h1{
+    color: #D40A0F;
+    font-family: Orbitron;
+    font-size: 2em;
+}
+
+.txt-1 p{
+    font-size: 1em;
+    width: 65%;
+    margin: 1em auto;
+}
+
+span{
+    text-decoration: underline;
+    font-style: italic;
+}
+
+.txt-1 p a{
+    color: #c8c8c8;
+    text-decoration: none;
+}
+
+.txt-1 p a:hover{
+    font-style: italic;
+    text-decoration: underline #777;
+}
+
+/* Segundo Article */
+.txt-2 h2{
+    font-size: 1.2em;
+    margin-top: .3em;
+}
+
+.txt-2 ul{
+    list-style-type: none;
+}
+
+.txt-2 li{
+    font-size: 1em;
+    margin: .2em 0  .5em .5em;
+    margin-right: 0;
+}
+
+@media screen and (max-width:1024px) {
+    .logo-index{
+        width: 75%;
+        margin: 1em 12.5%;
+    }
+    .txt-1 p{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:768px){
+    main{
+        width: 100%;
+        margin: 3em 0;
+    }
+    hr{
+        margin: 2em 10%;
+    }
+    .txt-1, .txt-2{
+        margin: 0 12.5%;
+    }
+    .logo-index p{
+        display: none;
+    }
+}
+
+@media screen and (max-width:480px){
+    .txt-1 h1{
+        font-size: 1.5em;
+    }
+    .txt-1 p{
+        font-size: .8em;
+    }
+    .txt-2 h2{
+        font-size: 1.2em;
+    }
+    .txt-2 li{
+        font-size: .8em;
+    }
+}
