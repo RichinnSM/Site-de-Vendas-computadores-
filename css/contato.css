@@ -9,9 +9,9 @@ body{
 }
 /* Logo */
 .contato-logo{
+    width: 50%;
     margin: 5em 25%;
     text-align: center;
-    width: 50%;
 }
 
 .contato-logo img{
@@ -47,6 +47,49 @@ body{
 .contato-cards a:hover .cards{
     background-color: rgb(233, 17, 46, .8);
 }
+
+/* Parte de Dúvidas */
+.sct-duvidas{
+    width: 80%;
+    margin: 0 10%;
+    color: #fff;
+}
+
+#centralization h1{
+    background-color: #282828;
+    text-decoration: underline #E9112E;
+    text-align: center;
+    margin-bottom: 2em;
+}
+/* Textos estilo accordion sem Js */
+summary{
+    list-style: none;
+    list-style-type: '+ ';
+    line-height: 1em;
+    align-items: center;
+    color: #E9112E;
+}
+
+summary:hover{
+    cursor: pointer;
+}
+
+details[open] summary{ /* Muda quando o details já está aberto */
+    list-style-type: '- ';
+}
+
+summary>h3{
+    background-color: #282828;
+    color: #fff;
+    margin: 1.3em 0 .5em;
+    font-family: Orbitron;
+}
+
+details .info{
+    margin-left: 5%;
+}
+
+
 
 /* Email e Telefone para Contato */
 .para-contato{         /*Section*/
@@ -107,7 +150,7 @@ body{
         padding: 0 5%;
     }
     .contato-logo{
-        margin: .5em 15%;
+        margin: 3em 15%;
         text-align: center;
         width: 70%;
     }
@@ -122,9 +165,51 @@ body{
     }
 }
 
-@media screen and (max-width:420px){
-    .contato-cards{
-        flex-direction: column;
+@media screen and (max-width:768px){
+    .contatos div{
+        font-size: .7em;
     }
-    
+    .contatos div>h4>img{
+        width: 1em;
+    }
+}
+
+@media screen and (max-width:480px){
+    .contato-cards, .contatos{
+        flex-direction: column;
+        gap: 1em;
+        align-items: center;
+    }
+    .contato-cards a{
+        width: 100%;
+    }
+    .cards{
+        font-size: .7em;
+        padding: .7em;
+    }
+    .para-contato h1, #centralization h1{
+        font-size: 1.5em;
+    }
+    .container-info details{
+        font-size: .7em;
+    }
+    .contatos div{
+        font-size: .8em;
+        width: 80%;
+    }
+    .para-contato{
+        margin-bottom: 3.5em;
+    }
+}
+@media screen and (max-width:300px){
+    .para-contato h1, #centralization h1{
+        font-size: 1em;
+    }
+    .container-info details{
+        font-size: .6em;
+    }
+    .contatos div{
+        font-size: .7em;
+        width: 80%;
+    }    
 }
