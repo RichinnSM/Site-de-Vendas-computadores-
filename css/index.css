@@ -47,23 +47,13 @@ hr{
 
 .txt-1 p{
     font-size: 1em;
-    width: 65%;
+    width: 70%;
     margin: 1em auto;
 }
 
 span{
     text-decoration: underline;
     font-style: italic;
-}
-
-.txt-1 p a{
-    color: #c8c8c8;
-    text-decoration: none;
-}
-
-.txt-1 p a:hover{
-    font-style: italic;
-    text-decoration: underline #777;
 }
 
 /* Segundo Article */
@@ -80,6 +70,16 @@ span{
     font-size: 1em;
     margin: .2em 0  .5em .5em;
     margin-right: 0;
+}
+
+.txt-2 li a{
+    color: #c8c8c8;
+    text-decoration: none;
+}
+
+.txt-2 li a:hover{
+    font-style: italic;
+    text-decoration: underline #777;
 }
 
 @media screen and (max-width:1024px) {
