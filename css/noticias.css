@@ -1,5 +1,6 @@
 main>h1{
-    margin: 1em 0 1.5em 1.5em;
+    width: fit-content;
+    margin: 1em 1.5em 1.5em 1.5em;
     font-size: 2em;
     font-weight: 600;
     color: #fff;
@@ -21,20 +22,18 @@ hr{
 
 .cards{
     box-sizing: border-box;
-    width: 80%;
+    width: 90%;
     display: flex;
     margin: 0 3em;
-    padding-right: 14%;
+    padding-right: 10%;
     gap: 2em;
     background-color: #d1d1d1;
     border-radius: 5px;
     text-align: justify;
-    /* border: 1px solid blue; */
 }
 
 .cards:hover{
-    box-shadow: 0px 0px 10px #d8d8d8;
-    /* width: 82%; */
+    transform: scale(1.025);
     transition: all 0.1s linear 0s;
 }
 
@@ -49,8 +48,9 @@ hr{
 }
 
 .cards-texto{
-    width: 55%;
+    width: 60%;
     padding: .2em 0;
+    overflow-y: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -63,6 +63,7 @@ hr{
 
 .cards-texto p{
     font-size: 1em;
+    height: min-content;
 }
 
 .cards-texto a{
@@ -73,7 +74,48 @@ hr{
 
 .cards-texto a:hover{
     text-decoration: underline #222;
-    /* color: #000; */
+}
+
+@media screen and (max-width: 1460px) and (min-width: 769px){
+    .cards{
+        gap: 3%;
+        padding-right: 3%;
+    }
+    .cards-texto{
+        width: 70%;
+    }
+    .cards-texto h2{
+        font-size: 1em;
+    }
+    .cards-texto p{
+        font-size: .8em;
+    }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 769px){
+    .card-img{
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 1010px) and (min-width: 769px){
+    .cards{
+        padding-right: 2%;
+        gap: 2%;
+    }
+    hr,.cards, main>h1{
+        margin-left: 5%;
+    }
+    .cards-texto h2{
+        font-size: .8em;
+    }
+    .cards-texto p{
+        font-size: .7em;
+    }
+    .cards-texto{
+        max-height: 150px;
+        overflow-y: auto;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -81,7 +123,9 @@ hr{
         margin-top: 2em;
     }
     main>h1{
-        margin: 2em 0 2em 1.5em;
+        margin: 2em auto;
+        text-align: center;
+        padding: 0 1em;
     }
     .cards{
         flex-direction: column;
@@ -101,7 +145,56 @@ hr{
         padding: 1em;
         gap: .5em;
     }
+    .cards-texto h2{
+        font-size: 1em;
+    }
+    .cards-texto p{
+        font-size: .8em;
+    }
     hr{
         margin: 1.5em 3em;
     }
+}
+
+@media screen and (max-width: 480px){
+    main>h1{
+        font-size: 1.2em;
+        padding: 0 .5em;
+    }
+    .cards{
+        width: 90%;
+        margin: 0 5%;
+        padding-bottom: .5em;
+    }
+    .cards-texto{
+        padding-bottom: .5em;
+    }
+    .cards-texto h2{
+        font-size: .8em;
+    }
+    .cards-texto p{
+        font-size: .6em;
+    }
+    hr{
+        margin: 1em 1.25em;
+    }
+}
+
+@media screen and (max-width: 280px){
+    main>h1{
+        font-size: 1em;
+    }
+    .cards{
+        max-height: 15%;
+    }
+    .cards-texto{
+        padding-bottom: .25em;
+    }
+    .cards-texto h2{
+        font-size: .7em;
+    }
+    .cards-texto p{
+        font-size: .5em;
+    }
+
 }
